@@ -1,14 +1,10 @@
-# react-native-snap-carousel
+# rn-snap-carousel
 
-![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat-square&colorB=191A17)
-[![npm](https://img.shields.io/npm/v/react-native-snap-carousel.svg?style=flat-square)](https://www.npmjs.com/package/react-native-snap-carousel)
-[![npm](https://img.shields.io/npm/dm/react-native-snap-carousel.svg?style=flat-square&colorB=007ec6)](https://www.npmjs.com/package/react-native-snap-carousel)
-<!-- [![github release](https://img.shields.io/github/release/meliorence/react-native-snap-carousel.svg?style=flat-square)](https://github.com/meliorence/react-native-snap-carousel/releases) -->
-[![github issues](https://img.shields.io/github/issues/meliorence/react-native-snap-carousel.svg?style=flat-square)](https://github.com/meliorence/react-native-snap-carousel/issues)
-[![github closed issues](https://img.shields.io/github/issues-closed/meliorence/react-native-snap-carousel.svg?style=flat-square&colorB=44cc11)](https://github.com/meliorence/react-native-snap-carousel/issues?q=is%3Aissue+is%3Aclosed)
-[![Issue Stats](https://img.shields.io/issuestats/i/github/meliorence/react-native-snap-carousel.svg?style=flat-square&colorB=44cc11)](http://github.com/meliorence/react-native-snap-carousel/issues)
+## Due to the lack of response from the maintenance team, I am deploying my own package for my projects. If you'd like to use this package, feel free to do so.
 
 -----
+Original Package [react-native-snap-carousel
+](https://www.npmjs.com/package/react-native-snap-carousel)
 -----
 
 ## ✨ Some great news for you, fellow plugin user!
@@ -74,17 +70,17 @@ We're not abandoning the ship, but we need more people to help us keep it alive 
 ## Usage
 
 ```bash
-$ npm install --save react-native-snap-carousel
+npm install --save rn-snap-carousel
 ```
 
 If you're using Typescript you should also install type definitions:
 ```bash
-$ npm install --save @types/react-native-snap-carousel
+npm install --save @types/rn-snap-carousel
 ```
 
 
 ```javascript
-import Carousel from 'react-native-snap-carousel';
+import Carousel from 'rn-snap-carousel';
 
 export class MyCarousel extends Component {
 
