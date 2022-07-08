@@ -55,7 +55,7 @@
         "eslint-plugin-react": "^7.7.0",
         "eslint-plugin-standard": "^3.0.1"
     },
-    "homepage": "https://github.com/pushpender-singh-ap/rn-snap-carousel",
+    "homepage": "https://github.com/pushpender-singh-ap/rn-snap-carousel#readme",
     "bugs": {
         "url": "https://github.com/pushpender-singh-ap/rn-snap-carousel/issues"
     },
