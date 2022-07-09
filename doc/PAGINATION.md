@@ -41,7 +41,7 @@ If your active and inactive dots aren't of the same color, you have a choice to 
 1. either animate the color transition by specifying both `dotColor` and `inactiveDotColor`
 1. or setting `{ backgroundColor }` in both `dotStyle` and `inactiveDotStyle`.
 
-**When animating the color transition, the dot component will no longer be able to use the native driver for scale and opacity transitions.** As stated in [React Native's doc](https://facebook.github.io/react-native/docs/animations.html#caveats), color animations aren't supported by the native driver. And, unfortunately, it doesn't seem currently possible to run native-powered and js-powered animations at the same time on the same element.
+**When animating the color transition, the dot component will no longer be able to use the native driver for scale and opacity transitions.** As stated in [React Native's doc](https://reactnative.dev/docs/animations#caveats), color animations aren't supported by the native driver. And, unfortunately, it doesn't seem currently possible to run native-powered and js-powered animations at the same time on the same element.
 
 Basically, this is a tradeoff between color transition and optimal smoothness. We recommended you to try the first version and, if you experiment performance drops, to settle for the second one.
 

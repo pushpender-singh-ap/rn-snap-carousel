@@ -30,7 +30,7 @@ Version `3.6.0` introduced a new cool feature: layouts. On top of the default on
 <Carousel layout={'tinder'} />
 ```
 
-We are able to do all this thanks to React Native's great [Animated API](https://facebook.github.io/react-native/docs/animations.html). Basically, we interpolate the current scroll position and provide to each item a set of animations based on this value. But those new layouts are just the tip of the iceberg. You can easily create others like these ones:
+We are able to do all this thanks to React Native's great [Animated API](https://reactnative.dev/docs/animations). Basically, we interpolate the current scroll position and provide to each item a set of animations based on this value. But those new layouts are just the tip of the iceberg. You can easily create others like these ones:
 
 ![react-native-snap-carousel custom layout](https://i.imgur.com/slnTbyG.gif)
 ![react-native-snap-carousel custom layout](https://i.imgur.com/OrdLsCM.gif)
@@ -43,7 +43,7 @@ We've decided to expose a way for users to provide their own interpolators, cust
 
 ### Prerequisites
 
-- You have some experience with React Native's [Animated API](https://facebook.github.io/react-native/docs/animations.html).
+- You have some experience with React Native's [Animated API](https://reactnative.dev/docs/animations).
 - You have a good understanding of [Animated's interpolations](https://github.com/browniefed/react-native-animation-book/blob/master/INTERPOLATION.md).
 - You've read and understood [the caveats](#caveats).
 - You are known for both your mental toughness and the peace of your mind.
@@ -102,7 +102,7 @@ It will translate into:
 
 When you scroll, items' opacity will progressively animate from one value to the next, following the scroll position.
 
-: bulb: Using `extrapolate: 'clamp'` will prevent your interpolation to exceed `outputRange`'s values, the "clamping" being desirable with most use cases. From [the RN doc](https://facebook.github.io/react-native/docs/animations.html#interpolation): *"By default, it will extrapolate the curve beyond the ranges given, but you can also have it clamp the output value."*
+: bulb: Using `extrapolate: 'clamp'` will prevent your interpolation to exceed `outputRange`'s values, the "clamping" being desirable with most use cases. From [the RN doc](https://reactnative.dev/docs/animations#interpolation): *"By default, it will extrapolate the curve beyond the ranges given, but you can also have it clamp the output value."*
 
 ## Step-by-step example
 
@@ -155,7 +155,7 @@ opacity: animatedValue.interpolate({
 })
 ```
 
-Now for the `rotate` animation. The active item and the third one won't be rotated at all, while the previous one will be in order to add a nice visual effect when swiping. Read [this](https://facebook.github.io/react-native/docs/animations.html#interpolation) if you need an explanation of the `extrapolate` property.
+Now for the `rotate` animation. The active item and the third one won't be rotated at all, while the previous one will be in order to add a nice visual effect when swiping. Read [this](https://reactnative.dev/docs/animations#interpolation) if you need an explanation of the `extrapolate` property.
 
 ```javascript
 transform: [{
@@ -289,7 +289,7 @@ Two solutions:
 
 ### Others
 
-We use the native driver to ensure smooth animations and prevent performance issues. As stated [in RN doc](https://facebook.github.io/react-native/docs/animations.html#caveats): *"Not everything you can do with Animated is currently supported by the native driver. The main limitation is that **you can only animate non-layout properties: things like `transform` and `opacity` will work, but flexbox and position properties will not**."*.
+We use the native driver to ensure smooth animations and prevent performance issues. As stated [in RN doc](https://reactnative.dev/docs/animations#caveats): *"Not everything you can do with Animated is currently supported by the native driver. The main limitation is that **you can only animate non-layout properties: things like `transform` and `opacity` will work, but flexbox and position properties will not**."*.
 
 ## What's next?
 
