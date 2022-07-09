@@ -166,7 +166,7 @@ export default class PaginationDot<TData> extends PureComponent<
               currentRef!._snapToItem(currentRef!._getPositionIndex(index));
               } catch (error) {
                   console.warn(
-                      'react-native-snap-carousel | Pagination: ' +
+                      'rn-snap-carousel | Pagination: ' +
                   '`carouselRef` has to be a Carousel ref.\n' +
                   error
                   );

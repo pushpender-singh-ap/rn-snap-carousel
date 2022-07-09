@@ -339,7 +339,7 @@ export class Carousel<TData> extends React.Component<
   // }
 
   _displayWarnings (props: CarouselProps<TData> = this.props) {
-      const pluginName = 'react-native-snap-carousel';
+      const pluginName = 'rn-snap-carousel';
       const removedProps = [
           'activeAnimationType',
           'activeAnimationOptions',

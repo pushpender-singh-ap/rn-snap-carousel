@@ -63,7 +63,7 @@ export default class Pagination<TData> extends PureComponent<PaginationProps<TDa
       (!props.dotColor && props.inactiveDotColor)
       ) {
           console.warn(
-              'react-native-snap-carousel | Pagination: ' +
+              'rb-snap-carousel | Pagination: ' +
           'You need to specify both `dotColor` and `inactiveDotColor`'
           );
       }
@@ -72,13 +72,13 @@ export default class Pagination<TData> extends PureComponent<PaginationProps<TDa
       (!props.dotElement && props.inactiveDotElement)
       ) {
           console.warn(
-              'react-native-snap-carousel | Pagination: ' +
+              'rb-snap-carousel | Pagination: ' +
           'You need to specify both `dotElement` and `inactiveDotElement`'
           );
       }
       if (props.tappableDots && props.carouselRef === undefined) {
           console.warn(
-              'react-native-snap-carousel | Pagination: ' +
+              'rb-snap-carousel | Pagination: ' +
           'You must specify prop `carouselRef` when setting `tappableDots` to `true`'
           );
       }
