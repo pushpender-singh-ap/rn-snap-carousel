@@ -12,7 +12,6 @@
         "url": "github.com/pushpender-singh-ap/rn-snap-carousel"
     },
     "scripts": {
-        "prepare": "bob build",
         "lint": "eslint \"**/*.{js,ts,tsx}\""
     },
     "keywords": [
