@@ -9,9 +9,10 @@
     "source": "src/index",
     "repository": {
         "type": "git",
-        "url": "github.com/pushpender-singh-ap/rn-snap-carousel"
+        "url": "git@github.com:pushpender-singh-ap/rn-snap-carousel.git"
     },
     "scripts": {
+        "build": "npm install",
         "lint": "eslint \"**/*.{js,ts,tsx}\""
     },
     "keywords": [
